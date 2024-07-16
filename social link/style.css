@@ -1,0 +1,87 @@
+body {
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter';
+}
+h3 {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 30px;
+}
+h4 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: hsl(75, 94%, 57%);
+    font-size: 13px;
+}
+h5 {
+    font-weight: 400;
+    margin: 15px;
+    font-size: 13px;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 12%);
+    width: 400px;
+    height: 600px;
+    border-radius: 5px;
+}
+img {
+    margin: 0px ;
+    border-radius: 50%; 
+}
+span {
+    color: #c3602d;
+}
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    background-color: hsl(0, 0%, 20%);
+    margin: 12px;
+    font-size: 14px;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%); 
+    font-weight: 700;
+}
+
+a:hover {
+    color: black;
+    background-color: hsl(75, 94%, 57%); 
+    animation: scaleUp 0.3s forwards;
+}
+
+
+
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 767px){
+    .container{
+        margin-top: 50px;
+        height: auto;
+    }
+}
